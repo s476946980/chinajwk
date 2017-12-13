@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, content=user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="__CSS__/reset.css" />
+    <link rel="stylesheet" type="text/css" href="__CSS__/custom.css" />
+    <link rel="stylesheet" type="text/css" href="__CSS__/swiper.3.1.7.min.css" />
+    <link rel="stylesheet" type="text/css" href="__CSS__/animate.min.css" />
+    <script type="text/javascript" src="__JS__/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="__JS__/common.js"></script>
+    <script type="text/javascript" src="__JS__/swiper.3.1.7.jquery.min.js"></script>
+    <script type="text/javascript" src="__JS__/swiper.animate1.0.2.min.js"></script>
+    <script type="text/javascript" src="__JS__/clipboard.min.js"></script>
+</head>
+<body>
+<section class="picture-sf clearfix">
+    <div class="cust-save-tit">保存我设计的牛仔裤</div>
+    <a class="return-sf" href="javascript:history.back(-1);"></a>
+    <div class="cover"></div>
+    <div class="swiper-containers">
+        <div class="picture-img picture-img-positive">
+            <img src="{:get_web_img($cover.cover)}" id="img-color"/>
+            <img src="{:get_web_img($button.cover)}" id="img-button"/>
+            <img src="{:get_web_img($thread.cover)}" id="img-thread"/>
+            <img src=""  id="img-crafts"/>
+            <div class="picture-left-t picture-pos">
+                <img src=""/>
+            </div>
+            <div class="picture-left-b picture-pos">
+                <img src="" />
+            </div>
+            <div class="picture-right-t picture-pos">
+                <img src="" />
+            </div>
+            <div class="picture-right-b picture-pos">
+                <img src="" />
+            </div>
+        </div>
+        <div class="picture-img picture-img-back">
+            <img src="{:get_web_img($cover.cover_back)}" id="img-color-back"/>
+            <img src="{:get_web_img($thread.cover_back)}" id="img-thread-back"/>
+            <div class="picture-left-back-t picture-pos">
+                <img src="" />
+            </div>
+            <div class="picture-left-back-b picture-pos">
+                <img src="" />
+            </div>
+            <div class="picture-right-back-t picture-pos">
+                <img src="" />
+            </div>
+            <div class="picture-right-back-b picture-pos">
+                <img src="" />
+            </div>
+        </div>
+    </div>
+    <ul class="picture-left-sf">
+        <li>
+            <div class="select-left-sf">
+                <i>裤子尺寸</i>
+                <div class="pic-con-sf">{$size}</div>
+            </div>
+            <div class="select-outer-sf">
+                <ul class="select-sf select-sf-one clearfix">
+                    {notempty name="sizes"}
+                        {volist name="sizes" id="si"}
+                            {if $si eq $size}
+                            <li class="pic-con-show">{$si}</li>
+                            {else /}
+                             <li>{$si}</li>
+                            {/if}
+                        {/volist}
+                    {/notempty}
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="select-left-sf">
+                <i>洗水颜色</i>
+                <div class="pic-con-sf">
+                    <img src="{:get_web_img($cover.cover_title)}" />
+                </div>
+            </div>
+            <div class="select-outer-sf">
+                <ul class="select-sf select-sf-two clearfix">
+                    {notempty name="color_info"}
+                    {volist name="color_info" id="co"}
+                    {if $co.cover_title eq $cover.cover_title}
+                    <li tag="{$co.cid}" de="{$co.is_default}" class="pic-con-show">
+                        <img src="{:get_web_img($co.cover_title)}" pdata="" id="show-{$co.cid}"/>
+                    </li>
+                    {else /}
+                    <li tag="{$co.cid}" de="{$co.is_default}">
+                        <img src="{:get_web_img($co.cover_title)}" pdata="" id="show-{$co.cid}"/>
+                    </li>
+                    {/if}
+                    {/volist}
+                    {/notempty}
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <div class="select-left-sf">
+                <i>特殊工艺</i>
+                <div class="pic-con-sf">
+                    <img src="__IMG__/cancel.png" id="crafts-title"/>
+                </div>
+            </div>
+            <div class="select-outer-sf">
+                <ul class="select-sf select-sf-four clearfix"></ul>
+            </div>
+        </li>
+        <li class="button-hardware">
+            <div class="select-left-sf">
+                <i>纽扣五金</i>
+                <div class="pic-con-sf">
+                    <img src="{:get_web_img($button.cover_title)}" id="button-title"/>
+                </div>
+            </div>
+            <div class="select-outer-sf">
+                <ul class="select-sf select-sf-five clearfix">
+                    {notempty name="buttons"}
+                    {volist name="buttons" id="bu"}
+                    {if $button.cover_title eq $bu.cover_title}
+                    <li tag="{$bu.bid}" class="pic-con-show">
+                        <img src="{:get_web_img($bu.cover_title)}" />
+                    </li>
+                    {else /}
+                    <li tag="{$bu.bid}">
+                        <img src="{:get_web_img($bu.cover_title)}" />
+                    </li>
+                    {/if}
+                    {/volist}
+                    {/notempty}
+                </ul>
+            </div>
+        </li>
+        <li class="pocket-pattern">
+            <div class="select-left-sf">
+                <i>口袋花样</i>
+                <div class="pic-con-sf">MW</div>
+            </div>
+            <div class="select-outer-sf">
+                <ul class="select-sf select-sf-three clearfix">
+                    {notempty name="wash"}
+                    {volist name="wash" id="wa"}
+                    <li><img src="{:get_web_img($wa)}" alt="" /></li>
+                    {/volist}
+                    {/notempty}
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="select-left-sf">
+                <i>牛仔车线</i>
+                <div class="pic-con-sf">
+                    <img src="{:get_web_img($thread.cover_title)}" id="thread-title"/>
+                </div>
+            </div>
+            <div class="select-outer-sf">
+                <ul class="select-sf select-sf-six clearfix">
+                    {notempty name="threads"}
+                    {volist name="threads" id="th"}
+                    {if $th.cover_title eq $thread.cover_title}
+                    <li tag="{$th.tid}" class="pic-con-show">
+                        <img src="{:get_web_img($th.cover_title)}" />
+                    </li>
+                    {else /}
+                    <li tag="{$th.tid}">
+                        <img src="{:get_web_img($th.cover_title)}" />
+                    </li>
+                    {/if}
+                    {/volist}
+                    {/notempty}
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="select-left-sf">
+                <i>定制文字</i>
+                <div class="pic-con-sf">
+                    <img src="__IMG__/cancel.png" />
+                </div>
+            </div>
+            <div class="select-outer-sf">
+                <ul class="select-sf select-sf-seven clearfix">
+                    <li>
+                        <img src="__IMG__/while.jpg"/>
+                    </li>
+                    <li>
+                        <img src="__IMG__/red.jpg" />
+                    </li>
+                    <li>
+                        <img src="__IMG__/yellow.jpg" />
+                    </li>
+                    <li><img src="__IMG__/cancel.png" /></li>
+                    {notempty name="fonts"}
+                    {volist name="fonts" id="fo"}
+                    <li tag="{$fo.fid}">
+                        <img src="{:get_web_img($th.cover_title)}" />
+                    </li>
+                    {/volist}
+                    {/notempty}
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <div class="custom-right-over"></div>
+    <div class="custom-saves">
+        <span class="custom-save">保存当前设计</span>
+        <span class="custom-save-over">保存当前设计</span>
+    </div>
+</section>
+<div class="custom-under-sf clearfix">
+    <div class="select-under-sf">
+        <div class="select-outing-sf">
+            <span class="under-right-sf"></span>
+            <span class="under-arrow-one"></span>
+            <div class="select-out-sf" style="">
+                <ul class="select-sfs select-img-one clearfix">
+                    <li class="cancel-select" reg="1" pr="0">
+                        <img src="__IMG__/cancel.png"/>
+                    </li>
+                    {notempty name="region.no1"}
+                    {volist name="region.no1" id="no1"}
+                    <li reg="1" pr="{$no1.pid}">
+                        <img src="{:get_web_img($no1.cover_title)}" tag="{:get_web_img($no1.cover)}"/>
+                    </li>
+                    {/volist}
+                    {/notempty}
+                </ul>
+            </div>
+        </div>
+        <div class="select-outing-sf">
+            <span class="under-right-sf"></span>
+            <span class="under-arrow-two"></span>
+            <div class="select-out-sf" style="">
+                <ul class="select-sfs select-img-two clearfix">
+                    <li class="cancel-select" reg="3" pr="0">
+                        <img src="__IMG__/cancel.png" />
+                    </li>
+                    {notempty name="region.no3"}
+                    {volist name="region.no3" id="no3"}
+                    <li reg="3" pr="{$no3.pid}">
+                        <img src="{:get_web_img($no3.cover_title)}" tag="{:get_web_img($no3.cover)}"/>
+                    </li>
+                    {/volist}
+                    {/notempty}
+                </ul>
+            </div>
+        </div>
+        <div class="select-outing-sf">
+            <span class="under-right-sf"></span>
+            <span class="under-arrow-three"></span>
+            <div class="select-out-sf" style="">
+                <ul class="select-sfs select-img-three clearfix">
+                    <li class="cancel-select" reg="2" pr="0">
+                        <img src="__IMG__/cancel.png" />
+                    </li>
+                    {notempty name="region.no2"}
+                    {volist name="region.no2" id="no2"}
+                    <li reg="2" pr="{$no2.pid}">
+                        <img src="{:get_web_img($no2.cover_title)}" tag="{:get_web_img($no2.cover)}"/>
+                    </li>
+                    {/volist}
+                    {/notempty}
+                </ul>
+            </div>
+        </div>
+        <div class="select-outing-sf">
+            <span class="under-right-sf"></span>
+            <span class="under-arrow-four"></span>
+            <div class="select-out-sf" style="">
+                <ul class="select-sfs select-img-four clearfix">
+                    <li class="cancel-select">
+                        <img src="__IMG__/cancel.png" reg="4" pr="0" />
+                    </li>
+                    {notempty name="region.no4"}
+                    {volist name="region.no4" id="no4"}
+                    <li reg="4" pr="{$no4.pid}">
+                        <img src="{:get_web_img($no4.cover_title)}" tag="{:get_web_img($no4.cover)}"/>
+                    </li>
+                    {/volist}
+                    {/notempty}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="select-under-back">
+        <div class="select-outing-sf">
+            <div class="select-out-sf" style="">
+                <ul class="select-sfs select-img-five clearfix">
+                    <li class="cancel-select">
+                        <img src="__IMG__/cancel.png" reg="7" pr="0" />
+                    </li>
+                    {notempty name="region.no7"}
+                    {volist name="region.no7" id="no7"}
+                    <li reg="7" pr="{$no7.pid}">
+                        <img src="{:get_web_img($no7.cover_title)}" tag="{:get_web_img($no7.cover)}"/>
+                    </li>
+                    {/volist}
+                    {/notempty}
+                </ul>
+            </div>
+            <span class="under-right-sf"></span>
+            <span class="under-arrow-one"></span>
+        </div>
+        <div class="select-outing-sf">
+            <div class="select-out-sf">
+                <ul class="select-sfs select-img-six clearfix">
+                    <li class="cancel-select">
+                        <img src="__IMG__/cancel.png" reg="8" pr="0" />
+                    </li>
+                    {notempty name="region.no8"}
+                    {volist name="region.no8" id="no8"}
+                    <li reg="8" pr="{$no8.pid}">
+                        <img src="{:get_web_img($no8.cover_title)}" tag="{:get_web_img($no8.cover)}"/>
+                    </li>
+                    {/volist}
+                    {/notempty}
+                </ul>
+            </div>
+            <span class="under-right-sf"></span>
+            <span class="under-arrow-two"></span>
+        </div>
+        <div class="select-outing-sf">
+            <span class="under-right-sf"></span>
+            <span class="under-arrow-three"></span>
+            <div class="select-out-sf" style="">
+                <ul class="select-sfs select-img-seven clearfix">
+                    <li class="cancel-select">
+                        <img src="__IMG__/cancel.png" reg="5" pr="0" />
+                    </li>
+                    {notempty name="region.no5"}
+                    {volist name="region.no5" id="no5"}
+                    <li reg="5" pr="{$no5.pid}">
+                        <img src="{:get_web_img($no5.cover_title)}" tag="{:get_web_img($no5.cover)}"/>
+                    </li>
+                    {/volist}
+                    {/notempty}
+                </ul>
+            </div>
+        </div>
+        <div class="select-outing-sf">
+            <span class="under-right-sf"></span>
+            <span class="under-arrow-four"></span>
+            <div class="select-out-sf">
+                <ul class="select-sfs select-img-eight clearfix">
+                    <li class="cancel-select">
+                        <img src="__IMG__/cancel.png" reg="6" pr="0" />
+                    </li>
+                    {notempty name="region.no6"}
+                    {volist name="region.no6" id="no6"}
+                    <li reg="6" pr="{$no6.pid}">
+                        <img src="{:get_web_img($no6.cover_title)}" tag="{:get_web_img($no6.cover)}"/>
+                    </li>
+                    {/volist}
+                    {/notempty}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="custom-under-outer" style="background:none;border-radius:0;">
+        <ul class="custom-under-list custom-under-back1 custom-under-show clearfix" data="1">
+            <li class="li-11" dat="yes"></li>
+            <li class="li-12" dat="yes"></li>
+            <li class="li-13" dat="yes"></li>
+            <li class="li-14" dat="yes"></li>
+        </ul>
+        <ul class="custom-under-list custom-under-back2 clearfix" data="2">
+            <li class="li-21" dat="yes"></li>
+            <li class="li-22" dat="yes"></li>
+            <li class="li-23" dat="yes"></li>
+            <li class="li-24" dat="yes"></li>
+        </ul>
+        <ul class="description-four">
+            <li>正面小脚</li>
+            <li>正面小脚</li>
+            <li>正面前袋</li>
+            <li>正面前袋</li>
+        </ul>
+    </div>
+    <div class="custom-roate">
+
+    </div>
+</div>
+<footer class="custom-footer clearfix">
+    <div class="cust-price" pdata="{$price}">￥{$price}</div>
+    <div class="cust-buy" allow="{$allow_buy}">购买</div>
+    <div class="cust-share"><a href="###"></a></div>
+    <div class="cust-person">
+        <a href="{:url('user/index')}" ></a>
+    </div>
+</footer>
+<div class="white"></div>
+<div class="custom-share-outer">
+</div>
+<div class="custom-share-bottom">
+    <span class="close-share"></span>
+    <ul class="cust-share-plat clearfix">
+        <li><a href="javascript:window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(document.location.href)+'&amp;t='+encodeURIComponent(document.title),'_blank','toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=600, height=450,top=100,left=350');void(0)" class="facebook" target="_blank">微博</a></li>
+        <li><a href="###" class="instagram" target="_blank">微信</a></li>
+        <li><a href="javascript:window.open('http://twitter.com/home?status='+encodeURIComponent(document.location.href)+' '+encodeURIComponent(document.title),'_blank','toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=600, height=450,top=100,left=350');void(0)" class="twitter" target="_blank">朋友圈</a></li>
+        <li><a href="http://pinterest.com/pin/create/button/?url=&{:url('index/custom',array('id'=>$id))}&media={:get_web_img($cover['cover'])}" class="pinterest" target="_blank">QQ</a></li>
+    </ul>
+    <div class="custom-herf clearfix">
+        <input type="text" value="" class="custom-herf-addr" name=""id="foo" readonly="readonly"/>
+        <button class="custom-herf-copy btn" data-clipboard-action="copy" data-clipboard-target="#foo">复制链接</button>
+    </div>
+</div>
+ <!-- 地址选择页开始  -->
+<div class="select-address-alert"></div>
+ <!-- 地址选择页结束  -->
+<!-- 地址添加开始 -->
+<div class="wrap" id="wrap">
+    <header class="header">
+        <a class="addr-back-list"><span></span></a>
+        <h1>添加地址</h1>
+    </header>
+    <section>
+        <form action="">
+            <div class="add-main">
+                <label class="label" for="">收件人</label>
+                <label class="label-input" for="">
+                    <input type="text" placeholder="必填" name="aname">
+                </label>
+            </div>
+            <div class="add-main">
+                <label class="label" for="">手机号码</label>
+                <label class="label-input" for="">
+                    <input type="text" placeholder="必填" name="phone">
+                </label>
+            </div>
+            <div class="add-main">
+                <label class="label" for="">地址</label>
+                <label class="label-input" for="">
+                    <input type="text" placeholder="必填" name="areas">
+                </label>
+            </div>
+            <div class="add-main">
+                <label class="label" for="">详细地址</label>
+                <label class="label-input">
+                    <input type="text" placeholder="必填" name="address">
+                </label>
+            </div>
+            <div class="check-main clearfix">
+                <label class="check-set" for="">设置为默认</label>
+                <label for="" class="check-btn">
+                    <input type="checkbox" name="def" value="1"><span></span>
+                </label>
+            </div>
+            <a class="save-btn">
+                <input type="button" value="确定">
+            </a>
+        </form>
+    </section>
+</div>
+<!-- 地址添加结束 -->
+ <!-- 显示购买价格  -->
+<div class="custom-price-show">
+    <ul class="price-detail-list-show">
+        <li class="clearfix">
+            <span>裤子</span>
+            <em>${$price}</em>
+        </li>
+        <li class="clearfix button-price">
+            <span>钮扣</span>
+            <em>//</em>
+        </li>
+        <li class="clearfix thread-price">
+            <span>车缝线</span>
+            <em>//</em>
+        </li>
+        <li class="clearfix craft-price">
+            <span>工艺</span>
+            <em>//</em>
+        </li>
+        <li class="clearfix part2-price">
+            <span>左则大腿 (正面)</span>
+            <em>//</em>
+        </li>
+        <li class="clearfix part4-price">
+            <span>左则小腿 (正面)</span>
+            <em>//</em>
+        </li>
+        <li class="clearfix part1-price">
+            <span>右则大腿(正面)</span>
+            <em>//</em>
+        </li>
+        <li class="clearfix part3-price">
+            <span>右则小腿(正面)</span>
+            <em>//</em>
+        </li>
+        <li class="clearfix part5-price">
+            <span>左则大腿 (后面)</span>
+            <em>//</em>
+        </li>
+        <li class="clearfix part7-price">
+            <span>左则小腿 (后面)</span>
+            <em>//</em>
+        </li>
+        <li class="clearfix part6-price">
+            <span>右则大腿 (后面)</span>
+            <em>//</em>
+        </li>
+        <li class="clearfix part8-price">
+            <span>右则小腿 (后面)</span>
+            <em>//</em>
+        </li>
+        <li class="clearfix">
+        <span>后面口袋</span>
+        <em>+$0.00</em>
+        </li>
+    </ul>
+    <div class="custom-price-r">
+        总计: <em>${$price}</em>
+    </div>
+    <div class="close-share"></div>
+</div>
+<!-- 显示价格结束 -->
+<div class="settlement-sf">
+    <form action="{:url('Index/buying')}" method="post" id="t-form">
+    <div class="settlement-sf-inner">
+        <div class="cust-address">
+            <a href="#" title="">
+                {if condition="$is_empty eq 2"}
+               您还没有收到地址，请点击这里添加。
+                {else/}
+                <div class="cust-address-all">
+                    <span class="address-name">{$user_addr.actual_name}</span>
+                    <span class="address-tele">{$user_addr.mobile}</span>
+                </div>
+                <div class="cust-address-detail">
+                    <p>{$user_addr.addr}&nbsp;&nbsp;{$user_addr.area}</p>
+                </div>
+                {/if}
+            </a>
+        </div>
+        <div class="express-all">
+            <div class="express-cust slide-top" data="1">快递 (运费RMB 10) </div>
+            <div class="express-detail slide-bottom">
+                <p>配送方式</p>
+                <p>快递 (运费RMB 10) </p>
+            </div>
+        </div>
+        <div class="invoice-cust">发票</div>
+        <div class="gift-cust">
+            <div class="gift-card slide-top" data="1">礼品卡及优惠卷</div>
+            <div class="slide-bottom clearfix">
+                <div class=" form-gift clearfix">
+                    <input type="text" placeholder="Please fill in the code"/>
+                    <span class="gift-enter">Enter</span>
+                </div>
+                <div class="gift-money clearfix">
+                    <em>礼品卡及优惠卷</em>
+                    <span>-￥0.00 X</span>
+                </div>
+            </div>
+        </div>
+        <div class="cust-price-all">
+            <div class="product-number slide-top clearfix" data="1">
+                <span class="product-name">男士牛仔裤</span>
+                <span class="product-num">
+                    <em class="all-final-num">x1</em>
+                    <em class="all-final-price">=￥</em>
+                </span>
+            </div>
+            <div class="price-detail slide-bottom">
+                <div class="number-change clearfix">
+                    <span class="add-number"></span>
+                    <em class="number-num">1</em>
+                    <span class="account-number"></span>
+                </div>
+                <ul class="price-detail-list">
+                    <li class="clearfix">
+                        <span>基础款式</span>
+                        <em>￥{$price}</em>
+                    </li>
+                    <li class="clearfix button-price">
+                        <span>钮扣</span>
+                        <em>//</em>
+                    </li>
+                    <li class="clearfix thread-price">
+                        <span>车缝钱</span>
+                        <em>//</em>
+                    </li>
+                    <li class="clearfix craft-price">
+                        <span>工艺</span>
+                        <em>//</em>
+                    </li>
+                    <li class="clearfix part2-price">
+                        <span>左则大腿 (正面)</span>
+                        <em>//</em>
+                    </li>
+                    <li class="clearfix part4-price">
+                        <span>左则小腿 (正面)</span>
+                        <em>//</em>
+                    </li>
+                    <li class="clearfix part1-price">
+                        <span>右则大腿 (正面)</span>
+                        <em>//</em>
+                    </li>
+                    <li class="clearfix part3-price">
+                        <span>右则小腿 (正面)</span>
+                        <em>//</em>
+                    </li>
+                    <li class="clearfix part5-price">
+                        <span>左则大腿 (后面)</span>
+                        <em>//</em>
+                    </li>
+                    <li class="clearfix part7-price">
+                        <span>左则小腿 (后面)</span>
+                        <em>//</em>
+                    </li>
+                    <li class="clearfix part6-price">
+                        <span>右则大腿 (后面)</span>
+                        <em>//</em>
+                    </li>
+                    <li class="clearfix part8-price">
+                        <span>右则小腿 (后面)</span>
+                        <em>//</em>
+                    </li>
+                    <li class="clearfix">
+                        <span>后面的口袋</span>
+                        <em>+￥0.00</em>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="end-price">
+            <ul>
+                <li>
+                    <em>小计：</em>
+                    <span class="item-price">￥</span>
+                </li>
+                <li>
+                    <em>运费 ：</em>
+                    <span class="postage-cust">￥10.00</span>
+                </li>
+                <li>
+                    <em>礼品卡及优惠卷：</em>
+                    <span class="discount-cust">//</span>
+                </li>
+                <li>
+                    <em class="total-cust">件数（1）</em>
+                    <span>合计：</span>
+                    <span class="final-price">￥</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <div class="final-buy"><a href="#">购买</a></div>
+        <input name="total_price" type="hidden" value="" id="total-price">
+        <input name="jid" type="hidden" value="{$price}">
+        <input name="color" type="hidden" id="p-color" value="{$cover.cid}">
+        <input name="crafts" type="hidden" id="p-crafts" value="0">
+        <input name="button" type="hidden" id="p-button" value="{$button.bid}">
+        <input name="thread" type="hidden" id="p-thread" value="{$thread.tid}">
+        <input name="size" type="hidden" id="p-size" value="{$size}">
+        <input name="word" type="hidden" id="p-words" value="0">
+        <!-- 文字区域固定 -->
+        <input name="part1" type="hidden" id="p-part1" value="0">
+        <input name="part2" type="hidden" id="p-part2" value="0">
+        <input name="part3" type="hidden" id="p-part3" value="0">
+        <input name="part4" type="hidden" id="p-part4" value="0">
+        <input name="part5" type="hidden" id="p-part5" value="0">
+        <input name="part6" type="hidden" id="p-part6" value="0">
+        <input name="part7" type="hidden" id="p-part7" value="0">
+        <input name="part8" type="hidden" id="p-part8" value="0">
+        <input name="addr" type="hidden" id="p-addr" value="{$user_addr.aid}">
+        <input name="quantity" type="hidden" id="p-quantity" value="1">
+    </form>
+</div>
+
+</div>
+<div class="background-img"></div>
+<img src="__IMG__/buy-img.png" class="buy-img" />
+<div class="background-index"></div>
+<div class="load-page">开始定制</div>
+<!-- tips -->
+<div class="prompt-confirm">
+    <p>此区域已有特殊工艺占用</p>
+    <p>此区域已有特殊工艺占用</p>
+    <p>此区域已有特殊工艺占用</p>
+    <em>确认!</em>
+</div>
+<div class="custom-alert"></div>
+ <!-- 更换裤子的水洗颜色  -->
+<div class="replace-color">
+    <p>噢！十分抱歉</p>
+    <p>此区域已有特殊工艺占用</p>
+    <p>此区域已有特殊工艺占用</p >
+    <p>此区域已有特殊工艺占用</p>
+    <span class="replace-confirm">确认</span><span class="replace-cancel">取消</span>
+</div>
+</body>
+
+<script type="text/javascript" src="__JS__/custom.js"></script>
+</html>
