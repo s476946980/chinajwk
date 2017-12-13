@@ -1,0 +1,248 @@
+/* 
+* @Author: anchen
+* @Date:   2017-11-02 17:38:31
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-12-07 14:40:03
+*/
+.wrap {
+    padding: 0 4.63%;
+    height: 100%;
+}
+.header {
+    position: relative;
+}
+.header span {
+    position: absolute;
+    top: 0;
+    left: 0.71rem;
+    display: block;
+    width: 4.08%;
+    height: 3.81rem;
+    background: url("../images/per_cen_03.png") center center no-repeat;
+    background-size: contain;
+    /*font-size: 1.05rem;*/
+    /*text-align: center;
+    line-height: 3.81rem;*/
+}
+.header i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 5.92%;
+    height: 3.81rem;
+    background: url("../images/per_cen_06.png") center center no-repeat;
+    background-size: contain;
+}
+.header h1 {
+    text-align: center;
+    color: #333333;
+    font-size: 0.95rem;
+    line-height: 3.81rem;
+}
+
+.per-main {
+    width: 94%;
+    margin: 0 auto;
+    padding-top: 2.62rem;
+    margin-bottom: 1.43rem;
+}
+.main-tit {
+    float: left;
+    width: 67.39%;
+}
+.main-tit h2 {
+    height: 1.52rem;
+    margin-bottom: 1.24rem;
+    font-size: 1.57rem;
+    font-weight: bold;
+}
+.main-con span {
+    float: left;
+    width: 1.07rem;
+    height: 1.21rem;
+    margin-right: 0.57rem;
+    background: url("../images/per_cen_14.png") 0 0 no-repeat;
+    background-size: contain;
+}
+.main-img {
+    float: left;
+    width: 32.61%;
+}
+.main-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.wrap-tap {
+    width: 100%;
+    margin-bottom: 1.67rem;
+    border-radius: 0.5rem;
+}
+.wrap-tap li {
+    float: left;
+    width: 50%;
+    height: 2.38rem;
+    background: #a0a0ac;
+    line-height: 2.38rem;
+    font-size: 0.95rem;
+    text-align: center;
+    font-weight: bold;
+}
+.tap-fav {
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+.tap-order {
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+.wrap-tap .active {
+    background: #ffcc00;
+} 
+.js-wrap {
+    display: none;
+}
+.wrap-block {
+    display: block;
+}
+.order-main h3 {
+    border-bottom: 1px solid #a0a0ac;  
+}
+.order-main h3, .fav-main h3 {
+    position: relative;
+    line-height: 2.62rem;
+    font-size: 1.19rem;
+    font-weight: bold;
+}
+.order-main h3 span, .fav-main h3 span {
+    margin-left: 0.5rem;
+    font-size: 0.57rem;
+    color: #a0a0ac;
+}
+.order-main h3 i {
+    position: absolute;
+    top: 0.71rem;
+    right: 0;
+    display: block;
+    width: 1.19rem;
+    height: 1.36rem;
+    background: url("../images/per_cen_19.png") 0 0 no-repeat;
+    background-size: contain;
+}
+.order-con {
+    position: relative;
+    margin-top: 0.71rem;
+    margin-bottom: 1.43rem;
+}
+.order-img {
+    overflow: hidden;
+    float: left;
+    width: 30.61%;
+    height:8rem;
+    background:#a19faa;
+}
+.order-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.order-content {
+    /*position: relative;*/
+    float: left;
+    width: 64.29%;
+    margin-left: 5.1%;
+}
+.order-content h4 {
+    margin-bottom: 0.76rem;
+    font-size: 0.86rem;
+}
+.order-content h4 span {
+    float: right;
+    color: #a0a0ac;
+}
+.order-content p {
+    font-size: 0.76rem;
+}
+.order-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 54.59%;
+}
+.order-btn span {
+    float: left;
+    /*width: 5.95rem;*/
+    width: 46.73%;
+    height: 2.38rem;
+    line-height: 2.38rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: #ffffff;
+}
+.order-btn span:nth-child(1) {
+    margin-right: 5.61%;
+    color: #fff;
+}
+/*.order-btn span:nth-child(2) {
+}*/
+.order-btn .btn-cancel {
+    background: #0c1260;
+}
+.order-btn .btn-payment {
+    background: #ffd200;
+    color: #000000;   
+}
+.order-btn .btn-det {
+    background: #0c1260;
+}
+.order-btn .btn-cus {
+    background: #a0a0ac;   
+}
+.order-btn .btn-trc {
+    background: #0c1260;
+}
+.order-btn .btn-rec {
+    background: #ffd200;
+    color: #000000;   
+}
+.order-btn .btn-reo {
+    background: #ffd200;
+    color: #000000;   
+}
+.order-btn .btn-com {
+    background: #a0a0ac;
+}
+.fav-main {
+    margin-bottom: 0.71rem;
+}
+.img-left {
+    float: left;
+    width: 61.22%;
+    overflow:hidden;
+    height: 17.89rem;
+    background:#a19faa;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+.img-right {
+    float: right;
+    width: 37.76%;
+}
+.img-btn {
+    overflow:hidden;
+    height:7rem;
+    margin-bottom: 0.24rem;
+}
+.fav-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.img-right img:nth-child(1) {
+    margin-bottom: 0.24rem;
+}
+.img-right img {
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+.img-left img {
+    border-radius: 0.5rem 0 0 0.5rem;
+}

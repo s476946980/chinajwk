@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, content=user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="../css/edit_pro.css" />
+        <link href="../css/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+        <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+    </head>
+    <body>
+        <div class="wrap">
+            <header class="header">
+                <a href="edit.html"><span></span></a>
+                <h1>Add Address</h1>
+            </header>
+            <section>
+                <form action="">
+                    <div class="add-main">
+                        <label class="label" for="">The recipient</label>
+                        <label class="label-input" for="">
+                            <input type="text" placeholder="Actual name" />
+                        </label>
+                    </div>
+                    <div class="add-main">
+                        <label class="label" for="">Password</label>
+                        <label class="label-input" for="">
+                            <input type="password" value="XXXXXX"/>
+                        </label>
+                    </div>
+                    <div class="add-main">
+                        <label class="label" for="">Password</label>
+                        <label class="label-input" for="">
+                            <input type="password" value="XXXXXX"/>
+                        </label>
+                    </div>
+
+                    <div class="add-main main-count">
+                        <label class="label" for="">Country</label>
+                        <div class="select-main">
+                            <div class="vertical">
+                                <select id="mySelect" class="myselect">
+                                    <option value="1" selected="selected">选择1</option>
+                                    <option value="2">选择2</option>
+                                    <option value="3">选择3</option>
+                                    <option value="2">选择4</option>
+                                    <option value="3" >选择5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-main main-lang">
+                        <label class="label" for="">Language</label>
+                        <div class="select-main">
+                            <div class="vertical">
+                                <select id="myLanguage" class="myselect">
+                                    <option value="1">Chinese</option>
+                                    <option value="2">English</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-main">
+                        <label class="label" for="">Gender</label>
+                        <div class="main-radio clearfix">
+                            <label for="" class="check-btn">
+                                <input type="radio" name="gender" id="male" checked /><span></span>
+                            </label>
+                            <label for="male" class="label-text">Male</label>
+                            <label for="" class="check-btn">
+                                <input type="radio" name="gender" id="fmale" /><span></span>
+                            </label>
+                            <label for="fmale" class="label-text">Fmale</label>
+                            <label for="" class="check-btn">
+                                <input type="radio" name="gender" id="custom" /><span></span>
+                            </label>
+                            <label for="custom" class="label-text">Custom</label>
+                        </div>
+                    </div>
+                    <!-- <div class="save-btn">
+                        <input type="button" value="Save" />
+                    </div> -->
+                </form>
+            </section>
+        </div>
+        <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="../js/jquery.select.js"></script>
+        <script type="text/javascript">
+            $(function () {
+
+               // $("#mySelect").select(); 不传参数可以这样写
+                $("#mySelect").select({
+                    width: "100%"
+                });
+                $("#myLanguage").select({
+                    width: "100%"
+                });
+                //可选参数,不填就是默认值
+                //width: "180px",            //生成的select框宽度
+                //listMaxHeight:"200px",     //生成的下拉列表最大高度
+                //themeColor: "#00bb9c",    //主题颜色
+                //fontColor: "#000",        //字体颜色
+                //fontFamily: "'Helvetica Neue', arial, sans-serif",    //字体种类
+                //fontSize:"15px",           //字体大小
+                //showSearch: false,        //是否启用搜索框
+                //rowColor:"#fff",          //行原本的颜色
+                //rowHoverColor: "#0faf03", //移动选择时，每一行的hover底色
+                //fontHoverColor: "#fff",   //移动选择时，每一行的字体hover颜色
+                //mainContent: "请选择",    //选择显示框的默认文字
+                //searchContent: "关键词搜索"   //搜索框的默认提示文字  
+            });
+        </script>
+    </body>
+</html>

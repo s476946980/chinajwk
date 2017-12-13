@@ -1,0 +1,111 @@
+/* 
+* @Author: anchen
+* @Date:   2017-11-02 17:39:10
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-11-05 09:34:05
+*/
+input{  
+   background:none;  
+   outline:none;  
+   border:0px;  
+} 
+html body {
+    height: 100%;
+}
+.wrap {
+    padding: 0 4.63%;
+    height: 100%;
+}
+.header {
+    position: relative;
+}
+.header span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 4.08%;
+    height: 3.81rem;
+    background: url("../images/left.png") center center no-repeat;
+    background-size: contain;
+}
+.header h1 {
+    text-align: center;
+    color: #333333;
+    font-size: 0.95rem;
+    line-height: 3.81rem;
+    font-weight: bold;
+}
+.add-main {
+    margin-bottom: 0.95rem;
+}
+.label {
+    display: block;
+    height: 1.52rem;
+    padding-left: 1.84%;
+    line-height: 1.52rem;
+    font-size: 0.67rem;
+}
+.label-input {
+    display: block;
+    border-radius: 0.24rem;
+    background: #d9d9d9;
+}
+.label-input input {
+    display: block;
+    width: 94.9%;
+    height: 2.38rem;
+    padding-left: 5.1%;
+    font-size: 0.76rem;
+    line-height: 2.38rem;
+    color: #000000;
+    font-weight: bold;
+}
+.check-main input[type="checkbox"] {
+    width: 1.19rem;
+    height: 1.19rem;
+    opacity: 0;
+}
+.check-set {
+    float: left;
+    width: 90%;
+    height: 1.52rem;
+    padding-left: 1.84%;
+    line-height: 1.52rem;
+    font-size: 0.86rem;
+    font-weight: bold;
+}
+.check-btn {
+    position: relative;
+    float: right;
+    width: 1.19rem;
+    height: 1.19rem;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    background: #e5e5e5;
+}
+.check-btn input[type="checkbox"] + span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0.6rem;
+    height: 0.6rem;
+    margin: 0.3rem;
+    border-radius: 50%;
+}
+.check-btn input[type="checkbox"]:checked + span {
+    background: #434343;
+}
+.save-btn {
+    display: block;
+    margin-top: 1rem;
+    background: #0c1260;
+    border-radius: 0.24rem;
+}
+.save-btn input[type="button"], .save-btn input[type="submit"]{
+    width: 100%;
+    color: #fff;
+    line-height: 2.38rem;
+    text-align: center;
+}

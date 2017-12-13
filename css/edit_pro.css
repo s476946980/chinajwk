@@ -1,0 +1,342 @@
+/* 
+* @Author: anchen
+* @Date:   2017-11-02 17:37:47
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-11-03 17:19:30
+*/
+input{  
+   background:none;  
+   outline:none;  
+   border:0px;  
+} 
+html body {
+    height: 100%;
+}
+.wrap {
+    padding: 0 4.63%;
+    height: 100%;
+}
+.header {
+    position: relative;
+}
+.header span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 4.08%;
+    height: 3.81rem;
+    background: url("../images/left.png") center center no-repeat;
+    background-size: contain;
+}
+.header h1 {
+    text-align: center;
+    color: #333333;
+    font-size: 0.95rem;
+    line-height: 3.81rem;
+    font-weight: bold;
+}
+.add-main {
+    margin-bottom: 0.95rem;
+}
+.label {
+    display: block;
+    height: 1.52rem;
+    padding-left: 1.84%;
+    line-height: 1.52rem;
+    font-size: 0.67rem;
+}
+.label-input {
+    display: block;
+    border-radius: 0.24rem;
+    background: #d9d9d9;
+}
+.label-input input {
+    display: block;
+    width: 94.9%;
+    height: 2.38rem;
+    padding-left: 5.1%;
+    font-size: 0.76rem;
+    line-height: 2.38rem;
+    color: #000000;
+    font-weight: bold;
+}
+/*select选项*/
+.select-main {
+    position: relative;
+    height: 2.38rem;
+    line-height: 2.38rem;
+    font-size: 0.67rem;
+    border-radius: 0.24rem;
+    background: #d9d9d9;
+}
+.vertical {
+    position: relative;
+    width: 100%;/*元素的宽度*/
+    height: 100%;/*元素的高度*/
+}
+.myselect {
+    width: 100%;/*元素的宽度*/
+    height: 2.38rem;/*元素的高度*/
+    border: 1px solid #d9d9d9;
+    padding-left: 1.84%;
+    border: 0;
+    background: #d9d9d9;
+}
+.select_container_nw {
+    position: relative;
+    width: 100%;
+    height: 2.38rem;
+    font-size: 0.86rem;
+    font-family: 'Helvetica Neue', arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.select_main {
+    position: relative;
+    width: inherit;
+    height: 2.38rem;
+}
+
+.select_content {
+    display: block;
+    padding-left: 5.1%;
+    line-height: 2.38rem;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    font-weight: bold;
+}
+
+    .select_content::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        /*width: 40px;*/
+        /*border-radius: 0 2px 2px 0;*/
+        /*box-shadow: inset -55px 0 25px -20px #fff;*/
+    }
+
+.select_input {
+    padding-left: 10px;
+    padding-right: 32px;
+    font-size: 15px;
+    overflow: hidden;
+    outline: none;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid #00bb9c;
+    background: url('/images/Search.png') no-repeat fixed top;
+    z-index: 1;
+}
+
+.search_svg {
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    z-index: 2;
+}
+
+/*.select_arrow, .select_arrow::after {
+    content: '';
+    position: absolute;
+    right: 6px;
+    top: 38%;
+    border: 8px solid transparent;
+    border-top: 8px solid #05826d;
+    z-index: 2;
+    -webkit-transform-origin: 50% 20%;
+    -moz-transform-origin: 50% 20%;
+    -ms-transform-origin: 50% 20%;
+    transform-origin: 50% 20%;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+}*/
+
+.select_arrow, .select_arrow_after {
+    content: '';
+    position: absolute;
+    right: 1.57rem;
+    top: 38%;
+    width: 1.24rem;
+    height: 0.76rem;
+   /* border: 8px solid transparent;
+    border-top: 8px solid #05826d;*/
+    background: url("../images/arr_03.png") 0 0 no-repeat;
+    background-size: contain;
+    z-index: 2;
+    -webkit-transform-origin: 50% 20%;
+    -moz-transform-origin: 50% 20%;
+    -ms-transform-origin: 50% 20%;
+    transform-origin: 50% 20%;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+}
+
+/*.select_arrow::after {
+        cursor: pointer;
+        margin-top: -9px;
+        right: -8px;
+        border-top-color: #fff;
+    }*/
+
+.select_arrow_after {
+    right: 1.57rem;
+    border-top-color: #000;
+}
+
+.select_list {
+    position: absolute;
+    left: 0px;
+    top: 94%;
+    width: inherit;
+    /*border: 1px solid #00bb9c;*/
+    border-top: none;
+    background-color: #d9d9d9;
+    overflow: hidden;
+    display: none;
+}
+
+    .select_list > .select_list_body ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+
+        .select_list > .select_list_body ul li {
+            user-select: none;
+            -webkit-user-select: none;
+            overflow: hidden;
+            padding-left: 5.1%;
+        }
+
+            .select_list > .select_list_body ul li:hover {
+                /*background-color: #00bb9c;
+                color: #fff;*/
+            }
+
+.cast_rotate {
+    transform-origin: 50% 20%;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.select_list_body {
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.list_current {
+    display: none;
+}
+
+.no_result {
+    display: none;
+    text-align: center;
+    color: #00bb9c;
+}
+.main-count .select_container_nw {
+    z-index: 12;
+}
+.main-lang .select_container_nw {
+    z-index: 11;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.check-main input[type="radio"] {
+    
+}
+/*.check-set {
+    float: left;
+    width: 90%;
+    height: 1.52rem;
+    padding-left: 1.84%;
+    line-height: 1.52rem;
+    font-size: 0.86rem;
+    font-weight: bold;
+}*/
+.check-btn {
+    position: relative;
+    display: inline-block;
+    width: 1.19rem;
+    height: 1.19rem;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    background: #e5e5e5;
+}
+.check-btn input[type="radio"] {
+    display: block;
+    width: 1.19rem;
+    height: 1.19rem;
+    opacity: 0;
+}
+.check-btn input[type="radio"] + span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0.6rem;
+    height: 0.6rem;
+    margin: 0.3rem;
+    border-radius: 50%;
+}
+.check-btn input[type="radio"]:checked + span {
+    background: #434343;
+}
+
+.save-btn {
+    position: absolute;
+    bottom: 5.62rem;
+    width: 90.74%;
+    margin: 0 1.02%;
+    background: #0c1260;
+    border-radius: 0.24rem;
+}
+.save-btn input[type="button"] {
+    width: 100%;
+    color: #fff;
+    line-height: 2.38rem;
+    text-align: center;
+}
+.main-radio {
+    padding: 0.83rem 0 0 2.04%;
+}
+.main-radio label {
+    float: left;
+    margin-right: 2.65%;
+}
+.label-text {
+    /*display: inline-block;*/
+    font-weight: bold;
+    font-size: 0.76rem;
+    line-height: 1.38rem;
+}

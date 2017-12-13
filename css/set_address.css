@@ -1,0 +1,85 @@
+/* 
+* @Author: anchen
+* @Date:   2017-11-02 17:39:22
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-11-05 09:30:05
+*/
+input{  
+   background:none;  
+   outline:none;  
+   border:0px;  
+}
+html body {
+    height: 100%;
+}
+.wrap {
+    padding: 0 4.63%;
+    height: 100%;
+}
+.header {
+    position: relative;
+}
+.header span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 4.08%;
+    height: 3.81rem;
+    background: url("../images/left.png") center center no-repeat;
+    background-size: contain;
+}
+.header h1 {
+    text-align: center;
+    color: #333333;
+    font-size: 0.95rem;
+    line-height: 3.81rem;
+    font-weight: bold;
+}
+.set-main {
+    margin-bottom: 0.71rem;
+}
+.set-main h2 {
+    position: relative;
+    height: 2.38rem;
+    padding: 0 2.86%;
+    margin-bottom: 0.1rem;
+    background: #d9d9d9;
+    border-radius: 0.24rem;
+    line-height: 2.38rem;
+    font-size: 0.71rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+.set-main p {
+    position: relative;
+    padding: 0.83rem 5.92% 0.83rem 2.86%;
+    background: #d9d9d9;
+    border-radius: 0.24rem;
+    line-height: 0.9rem;
+    font-size: 0.62rem;
+    color: #000000;
+}
+.set-main p::after {
+    content: "\003E" ;
+    width: 0.67rem;
+    height: 0.76rem;
+    position: absolute;
+    top: 40%;
+    right: 0.71rem;
+    color: #aaaaaa;
+    font-size: 1.2rem;
+} 
+.save-btn {
+    display: block;
+   
+    background: #0c1260;
+    border-radius: 0.24rem;
+}
+.save-btn input[type="button"] {
+    width: 100%;
+    color: #fff;
+    line-height: 2.38rem;
+    text-align: center;
+}

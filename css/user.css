@@ -1,0 +1,37 @@
+    html {
+        padding-bottom: 4.29rem;
+    }
+    .back {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 3.1rem;
+        background: white;
+        width: 100%;
+        text-align: center;
+        line-height: 3.1rem;
+        font-weight: bolder;
+        font-size: 1rem;
+        color:#666;
+    }
+    
+    .back a {
+        position:absolute;
+        left: 0;
+        top:0;
+        width: 0.95rem;
+        height: 3.1rem;
+        padding-left: 7.32%;
+        background: url(../images/left.png) 68.95% center no-repeat;
+        background-size: 33.47% 33.46%;
+    }
+    .art {
+        padding:3.1rem 3.61% 0 3.61%;
+    }
+    p {
+        line-height: 1.52rem;
+        margin-bottom: 2.14rem;
+        font-size: 0.86rem;
+        color: #666;
+    }
+   

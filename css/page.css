@@ -1,0 +1,165 @@
+
+    .head {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 91%;
+        padding: 0 4.5%;
+        height: 4.29rem;
+        z-index: 100;
+        background: white;
+        opacity: 0.8;
+        -webkit-opacity:0.8;
+    }
+    .head img {
+        float: left;
+        width: 55%;
+        height: auto;
+        margin-top: 1.49rem;
+    }
+    .share {
+        float: right;
+        margin-top: 1.23rem;
+        display: block;
+        width: 1.89rem;
+        height: 1.73rem;
+        background: url("../images/share.png") no-repeat;
+        background-size: 90% 90%;
+    }
+    .mine{
+        float: right;
+        margin: 1.29rem 0 0 6%;
+        display: block;
+        width: 1.79rem;
+        height: 1.88rem;
+        background: url("../images/mine.png") no-repeat;
+        background-size: 90% 90%;
+    }
+    .container img {
+        display:block;
+        width: 91%;
+        margin: 0 auto;
+    }
+    .container {
+        margin-top: 4.29rem;
+    }
+    .box{
+        position:relative;
+        margin-bottom: 10px;
+    }
+    .title {
+        position:absolute;
+        font-size: 2.14rem;
+        color: white;
+        left:10%;
+        top: 4.76rem;
+    }
+    .momey {
+        position:absolute;
+        font-size: 0.86rem;
+        color: white;
+        left:10%;
+        top: 7.34rem;
+    }
+    .custom {
+        position:absolute;
+        font-size: 1.07rem;
+        left:7%;
+        bottom: 0.71rem;
+        padding: 0 1.19rem;
+        background:#ffd200;
+        line-height: 2.86rem;
+        border-radius: 0.71rem;
+        font-weight: bolder;
+    }
+    /*分享*/
+
+    .custom-share-outer {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 666;
+}
+.custom-share-bottom {
+    position: fixed;
+    left: 0;
+    bottom: -200rem;
+    width: 100%;
+    z-index: 999;
+    background: rgba(255,255,255,0.5);
+}
+.cust-share-plat{
+    width: 91.8%;
+    padding: 2.5rem 4.6% 0.3rem;
+    background: rgba(255, 255, 255, 0.8);
+}
+.custom-herf {
+    width: 91.8%;
+    padding: 1.81rem 4.6%;
+    background: rgba(255, 255, 255, 0.8);
+    border-top: 1px solid #aaa;
+}
+.close-share {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 2rem;
+    height: 2rem;
+    background: url("../images/close.png") center center no-repeat;
+    background-size: 100% auto;
+}
+.cust-share-plat li {
+    float: left;
+    width: 25%;
+    margin-bottom: 1rem;
+}
+.cust-share-plat li a {
+    display: block;
+    width: 100%;
+    padding-top: 4rem;
+    text-align: center;
+}
+.custom-herf-addr {
+    float: left;
+    width: 14.1rem;
+    height: 2.19rem;
+    line-height: 2.19rem;
+    padding-left: 8px;
+    border-radius: 0.71rem;
+    border: 0.1rem solid #9fa0a0;
+    color: #626c7a;
+    outline: none;
+}
+.custom-herf-copy {
+    float: left;
+    width: 33%;
+    margin-left:0.71rem;
+    border-radius: 0.71rem;
+    background: #ffd200;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size:1rem;
+    font-weight: bold;
+}
+.facebook {
+    background: url("../images/facebook.png") center 0 no-repeat;
+    background-size: 60% auto;
+}
+.instagram {
+    background: url("../images/instag.png") center 0 no-repeat;
+    background-size: 60% auto;
+}
+.twitter {
+    background: url("../images/twitter.png") center 0 no-repeat;
+    background-size: 60% auto;
+}
+.pinterest {
+    background: url("../images/pinter.png") center 0 no-repeat;
+    background-size: 60% auto;
+}

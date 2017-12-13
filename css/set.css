@@ -1,0 +1,48 @@
+/* 
+* @Author: anchen
+* @Date:   2017-11-02 17:38:31
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-11-03 11:15:51
+*/
+.wrap {
+    padding: 0 4.63%;
+    height: 100%;
+}
+.header {
+    position: relative;
+}
+.header span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 4.08%;
+    height: 3.81rem;
+    background: url("../images/left.png") center center no-repeat;
+    background-size: contain;
+}
+.header h1 {
+    text-align: center;
+    color: #333333;
+    font-size: 0.95rem;
+    line-height: 3.81rem;
+    font-weight: bold;
+}
+.section {
+    padding-top: 2.76rem;
+}
+.section ul li {
+    padding-left: 3.37%;
+    line-height: 2rem;
+
+}
+.section ul li a {
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+.set-about {
+    margin-top: 2.57rem;
+}
+.set-out a {
+    color: #a0a0ac;
+}

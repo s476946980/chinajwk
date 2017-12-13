@@ -1,0 +1,144 @@
+    html {
+        padding-bottom: 4.29rem;
+    }
+    .back {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 3.1rem;
+        background: white;
+        width: 100%;
+        text-align: center;
+        line-height: 3.1rem;
+        font-weight: bolder;
+        font-size: 1.33rem;
+        color:#000;
+    }
+    
+    .back a {
+        position:absolute;
+        left: 0;
+        top:0;
+        width: 0.95rem;
+        height: 3.1rem;
+        padding-left: 7.32%;
+        background: url(../images/left.png) 68.95% center no-repeat;
+        background-size: 33.47% 33.46%;
+    }
+    .wrap {
+        padding: 3.1rem 4.63% 0;
+    }
+    .next {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.95rem;
+        border-radius: 0.36rem;
+        background: #ffd200;
+        text-align: center;
+        line-height: 2.38rem;
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    #next{
+        float: left;
+    }
+    .clearfix {
+        overflow: hidden;
+        background: #d9d9d9;
+        border-radius: 0.36rem;
+        margin-bottom: 0.36rem;
+    }
+      
+    .form .clearfix input[type="radio"] {
+        float: left;
+        width:1.19rem;
+        height:1.19rem;
+        margin: 1.07rem 0.64rem 0 0;
+    }
+    .form .clearfix label {
+        display:block;
+        padding: 0 5%;
+        line-height: 3.5rem;
+        font-size: 1rem;
+        color:#000;
+        font-weight: bolder;
+    }
+    .info {
+        padding: 0 5%;
+        display:block;
+        overflow:hidden;
+        height:12.74rem;
+        background: #d9d9d9;
+    }
+    .info input {
+        outline: none;
+        border-radius: 0.36rem;
+        border: 1px solid #000;
+        margin-bottom: 0.36rem;
+        height: 2.26rem;
+        line-height: 2.26rem;
+        padding-left: 5%;
+        font-size: 1rem;
+    }
+    .surname {
+        float: left;
+        width: 43%;
+    }
+    .name {
+        float: right;
+        width:43%;
+    }
+    .number {
+        float: left;
+        width: 62.61%;
+    }
+    .code {
+        float: right;
+        width: 23.98%;
+    }
+    h2 {
+        float: left;
+        width: 100%;
+        font-size: 1rem;
+        margin-bottom: 0.71%;
+    }
+    select {
+        float: left;
+        height: 2.26rem;
+        padding: 0 21%;
+        line-height: 2.26rem;
+        font-size: 1rem;
+        outline:none;
+        border:0;
+        margin-bottom: 0.36rem;
+        appearance: none;
+        -webkit-appearance: none;
+         border-radius: 0.36rem;
+         background:white url("../images/direction_q.png") no-repeat;
+         background-size: 5% 27%;
+         background-position: 95% center;
+    }
+    select option {
+         padding: 0 21%;
+    }
+    #year {
+        float: right;
+        padding: 0 19%;
+    }
+    #year option {
+         padding: 0 19%;
+    }
+    p{
+        font-size: 0.86rem;
+        text-align: center;
+        margin: -0.3rem 0 0.71rem;
+    }
+    .continue {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        color: #1f2949;
+        font-size: 0.86rem;
+        font-weight: bolder;
+    }
+   

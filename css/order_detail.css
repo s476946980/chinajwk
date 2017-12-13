@@ -1,0 +1,218 @@
+/* 
+* @Author: anchen
+* @Date:   2017-11-04 13:24:13
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-11-04 13:48:13
+*/
+/*结算页面订单样式*/
+.settlement-sf-order {
+    /*position: fixed;
+    left: 0;
+    bottom: -30rem;*/
+    width: 100%;
+    /*height: 100%;*/
+    z-index: 999;
+}
+.settlement-sf-inner-order {
+    overflow: auto;
+    /*position: absolute;
+    left: 0;
+    bottom: 0;*/
+    /*height: 100%;*/
+    width: 90.74%;
+    padding: 0.67rem 4.63%;
+    background: #fff;
+}
+.settlement-show-inner-order {
+    height: 100%;
+}
+.settlement-sf-inner-order > div {
+    margin-bottom: 0.36rem;
+}
+.cust-address-order a {
+    display: block;
+    padding: 0.62rem 0 0.62rem 5.1%;
+    -webkit-border-radius: 0.71rem;
+    -moz-border-radius: 0.71rem;
+    border-radius: 0.71rem;
+    background:  #f2f2f2;
+}
+.cust-address-all-order {
+    margin-bottom: 0.62rem;
+    font-size: 0.86rem;
+    font-weight: bold;
+}
+.cust-address-all-order span {
+    margin-right: 2%;
+}
+.cust-address-detail-order p {
+    font-size: 0.71rem;
+}
+.express-cust-order, .gift-card-order, .product-number-order {
+    width: 94.9%;
+    padding-left: 5.1%;
+    height: 2.38rem;
+    margin-bottom: 0.12rem;
+    -webkit-border-radius: 0.71rem;
+    -moz-border-radius: 0.71rem;
+    border-radius: 0.71rem;
+    background:  #f2f2f2;
+    line-height: 2.38rem;
+    font-size: 0.86rem;
+}
+.express-detail-order {
+    overflow: hidden;
+    padding: 0.62rem 0 0.62rem 5.1%;
+    -webkit-border-radius: 0.71rem;
+    -moz-border-radius: 0.71rem;
+    border-radius: 0.71rem;
+    background:  #f2f2f2;
+    color: #666;
+    font-size: 0.86rem;
+}
+.invoice-cust-order, .gift-money-order {
+    height: 2.38rem;
+    padding-left: 5.1%;
+    -webkit-border-radius: 0.71rem;
+    -moz-border-radius: 0.71rem;
+    border-radius: 0.71rem;
+    line-height: 2.38rem;
+    font-size: 0.86rem;
+    background: #f2f2f2;
+}
+.gift-money-order {
+    margin-top: 0.12rem;
+}
+.form-gift-order, .end-price-order {
+    padding: 0.71rem 0 0.71rem 5.1%;
+    -webkit-border-radius: 0.71rem;
+    -moz-border-radius: 0.71rem;
+    border-radius: 0.71rem;
+    background: #f2f2f2;
+}
+.form-gift-order input {
+    float: left;
+    width: 54.02%;
+    height: 2.38rem;
+    padding-left: 6%;
+    margin-right: 4%;
+    -webkit-border-radius: 0.71rem;
+    -moz-border-radius: 0.71rem;
+    border-radius: 0.71rem;
+    border: 0.1rem solid #9fa0a0;
+    box-sizing: border-box;
+    line-height: 2.38rem;
+    outline: none;
+}
+.gift-enter-order {
+    float: left;
+    width: 35.71%;
+    height: 2.38rem;
+    -webkit-border-radius: 0.71rem;
+    -moz-border-radius: 0.71rem;
+    border-radius: 0.71rem;
+    color: #000001;
+    background: #ffd200;
+    line-height: 2.38rem;
+    text-align: center;
+    font-weight: bold;
+}
+.product-name-order {
+    float: left;
+}
+.product-num-order {
+    float: right;
+    margin-right: 8%;
+}
+.product-num-order i {
+    font-family: normal;
+}
+.number-change-order span, .number-change-order em {
+    float: right;
+    width: 2.14rem;
+    height: 2.14rem;
+    line-height: 2.14rem;
+    text-align: center;
+}
+.add-number-order {
+    margin-right: 7%;
+    background: url("../images/add_1.png")  0 center no-repeat;
+    background-size: 100% auto;
+}
+.product-number-order {
+    margin-bottom: 0.12rem;
+}
+.account-number-order {
+    background: url("../images/account.png")  0 center no-repeat;
+    background-size: 100% auto;
+}
+.price-detail-order {
+    padding: 0.71rem 0 0.71rem 0;
+    -webkit-border-radius: 0.71rem;
+    -moz-border-radius: 0.71rem;
+    border-radius: 0.71rem;
+    background: #f2f2f2;
+}
+.price-detail-list-order li {
+    overflow: hidden;
+    padding-left: 5.1%;
+    margin-bottom: 0.31rem;
+    color: #666;
+    font-size: 0.86rem;
+}
+.price-detail-list-order li span {
+    float: left;
+}
+.price-detail-list-order li em {
+    float: right;
+    margin-right: 8%;
+}
+.end-price-order ul li {
+    margin-bottom: 0.2rem;
+    font-size: 0.86rem;
+}
+.slide-bottom-order {
+    display: none;
+}
+.final-price-order {
+    font-weight: bold;
+}
+.final-buy {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 90.74%;
+    padding: 0.71rem 4.63%;
+    background: #f2f2f2;
+}
+.final-buy span {
+    float: right;
+    width: 25.71%;
+    height: 2.38rem;
+    -webkit-border-radius: 0.71rem;
+    -moz-border-radius: 0.71rem;
+    border-radius: 0.71rem;
+    line-height: 2.38rem;
+    text-align: center;
+    font-size: 0.86rem;
+}
+.cancel-order {
+    margin-right: 5.1%;
+    background: #0c1260;
+    color: #fff;
+}
+.pay-order {
+    background: #ffd200;
+}
+.gift-money em {
+    float: left;
+}
+.gift-money span {
+    float: right;
+    margin-right: 3%;
+}
+.gift-cust .gift-money {
+    display: none;
+    margin-top: 0.12rem;
+    color: #666;
+}

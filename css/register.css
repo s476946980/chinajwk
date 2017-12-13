@@ -1,0 +1,187 @@
+body, html{
+    height: 100%;
+}
+.wrap {
+    padding: 0 4.63% 0.36rem;
+    background: white;
+}
+.login {
+    display: block;
+    width: 9.52rem;
+    margin: 0 auto;
+    padding: 5rem 0 2.62rem;
+}
+h1 {
+    font-size: 1.43rem;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 1.6rem;
+}
+h2 {
+    display:none;
+    text-align: center;
+    color: #000;
+    font-size: 1rem;
+    margin-bottom: 1.19rem;
+}
+.register {
+    margin-bottom: 0.6rem;
+}
+.password-remind,.number-remind {
+    display:none;
+    width: 57%;
+    padding: 0.5rem 4% 0 5%;
+    font-size: 0.86rem;
+    height: 2.6rem;
+    line-height: 1.14rem;
+    border: 1px solid #d6d6d6;
+    border-radius: 0.36rem;
+    margin-bottom: 0.6rem;
+}
+.box{
+    overflow:hidden;
+    height: 0;
+}
+.page-secend {
+    display:none;
+}
+.clearfix {
+    margin-bottom: 0.95rem;
+}
+.register input {
+    width: 95%;
+    padding-left: 5%;
+    line-height: 2.38rem;
+    outline: none;
+    border-radius: 0.36rem;
+    background: #d9d9d9;
+    border:none;
+    font-size: 1rem;
+    color: #7b7c7c;
+}
+.register button {
+    width: 100%;
+    line-height: 2.38rem;
+    background: #0c1260;
+    border-radius: 0.36rem;
+    color: white;
+    outline:none;
+    border:none;
+    font-size: 1rem;
+}
+p {
+    font-size: 0.86rem;
+    text-align: center;
+    margin-bottom: 0.6rem;
+    line-height: 1.43rem;
+}
+.facebook,.google {
+    display:block;
+    width:100%;
+    line-height: 2.38rem;
+    color:white;
+    text-align: center;
+    border-radius: 0.36rem;
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+    font-weight: bolder;
+}
+.facebook {
+    background: #4267b2 url("../images/facebook_q1.png") no-repeat;
+    background-size: 2.02rem 2.02rem;
+    background-position: 0.23rem 0.19rem;
+}
+.google {
+    background: #4285f4 url("../images/google_q1.png") no-repeat;
+    background-size: 2.02rem 2.02rem;
+    background-position: 0.23rem 0.19rem;
+}
+.continue {
+    display:block;
+    width: 7.14rem;
+    line-height:2.38rem;
+    border-radius: 0.36rem;
+    text-align: center;
+    margin: 0 auto;
+    background: #d9d9d9;
+    color: #0c1260;
+    font-weight: bolder;
+}
+.info input[type="text"] {
+    width: 75%;
+    padding-left: 5%;
+    line-height: 2.38rem;
+    outline: none;
+    border-radius: 0.36rem;
+    background: #d9d9d9;
+    border:none;
+    font-size: 1rem;
+    color: #7b7c7c;
+}
+select {
+    float: right;
+    width: 18.37%;
+    padding-left: 3%;
+    height: 2.38rem;
+    border-radius: 0.36rem;
+    background: #d9d9d9;
+    text-align: center;
+    outline: none;
+    border:none;
+    appearance:none;
+    -webkit-appearance:none;
+}
+.choose {
+    padding-left: 5%;
+    height: 1.19rem;
+    margin-bottom: 2.38rem;
+}
+.choose label {
+    float: left;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-right: 1.19rem;
+    font-weight: bolder;
+}
+.choose input {
+    float: left;
+    width: 1.21rem;
+    height: 1.21rem;
+    margin-right: 0.65rem;
+}
+.info button {
+    width: 100%;
+    line-height: 2.38rem;
+    background: #0c1260;
+    border-radius: 0.36rem;
+    color: white;
+    outline:none;
+    border:none;
+    font-size: 1rem;
+}
+.back {
+    display:block;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    margin: 1.79rem 0 1.55rem;
+}
+.line {
+    width:100%;
+    height:2px;
+    background:#000;
+}
+.continue {
+    display:block;
+    width: 7.14rem;
+    line-height:2.38rem;
+    border-radius: 0.36rem;
+    text-align: center;
+    margin: 1.38rem auto 0;
+    background: #d9d9d9;
+    color: #0c1260;
+    font-weight: bolder;
+}
+
+
