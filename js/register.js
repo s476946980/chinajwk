@@ -1,6 +1,5 @@
 $("#button").click(function(){
     var h2 = $("#email").val();
-
     if($("#email").val() == "") {
         $(".number-remind").slideDown();
         return;

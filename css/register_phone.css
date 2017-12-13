@@ -18,7 +18,8 @@ h1 {
     font-weight: bold;
     margin-bottom: 1.6rem;
 }
-.form div {
+
+.register,.choose {
     margin-bottom: 0.6rem;
 }
 .password-remind,.number-remind {
@@ -29,12 +30,9 @@ h1 {
     line-height: 1.14rem;
     border: 1px solid #d6d6d6;
     border-radius: 0.36rem;
+    margin-bottom: 0.6rem;
 }
-.box{
-    overflow:hidden;
-    height: 0;
-}
-.form div input {
+input {
     width: 95%;
     padding-left: 5%;
     line-height: 2.38rem;
@@ -45,7 +43,7 @@ h1 {
     font-size: 1rem;
     color: #7b7c7c;
 }
-.form div button {
+#button {
     width: 100%;
     line-height: 2.38rem;
     background: #0c1260;
@@ -54,33 +52,43 @@ h1 {
     outline:none;
     border:none;
     font-size: 1rem;
+}
+.user,.verification {
+    width: 62%;
+}
+.age {
+    width:30%;
+    padding:0;
+    text-align: center;
+}
+.button {
+    width:30%;
+    line-height: 2.38rem;
+    background: #7b7c7c;
+    border-radius: 0.36rem;
+    color: #d9d9d9;
+    outline:none;
+    border:none;
+    font-size: 1rem;
+
+}
+.choose {
+    padding-left: 5%;
+}
+.choose input,p input {
+    float: left;
+    width: 1.21rem;
+    height: 1.21rem;
+    margin-right: 0.65rem;
+}
+.choose label,p label {
+    float: left;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-right: 1.19rem;
     font-weight: bolder;
 }
-p {
-    padding:0 5%;
-    margin-bottom: 3.52rem;
-    font-size: 1rem;
-    
-}
-p a {
-    color:#7b7c7c;
-}
-p .forget {
-    float: right;
-}
-h2 {
-    text-align: center;
+p label a {
     font-size: 0.86rem;
-    color:#7b7c7c;
-    margin-bottom: 1.29rem;
-}
-.social a {
-    float:left;
-    display:block;
-    width:50%;
-}
-.social a img {
-    display:block;
-    width:25%;
-    margin: 0 auto;
+    color:#828282;
 }
