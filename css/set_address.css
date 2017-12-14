@@ -2,7 +2,7 @@
 * @Author: anchen
 * @Date:   2017-11-02 17:39:22
 * @Last Modified by:   anchen
-* @Last Modified time: 2017-11-05 09:30:05
+* @Last Modified time: 2017-12-14 21:11:58
 */
 input{  
    background:none;  
@@ -32,7 +32,7 @@ html body {
 .header h1 {
     text-align: center;
     color: #333333;
-    font-size: 0.95rem;
+    font-size: 1.14rem;
     line-height: 3.81rem;
     font-weight: bold;
 }
@@ -47,7 +47,7 @@ html body {
     background: #d9d9d9;
     border-radius: 0.24rem;
     line-height: 2.38rem;
-    font-size: 0.71rem;
+    font-size: 0.86rem;
     color: #000000;
     font-weight: bold;
 }
@@ -58,8 +58,11 @@ html body {
     background: #d9d9d9;
     border-radius: 0.24rem;
     line-height: 0.9rem;
-    font-size: 0.62rem;
+    font-size: 0.71rem;
     color: #000000;
+}
+.set-main p span {
+    display:block;
 }
 .set-main p::after {
     content: "\003E" ;
@@ -72,8 +75,9 @@ html body {
     font-size: 1.2rem;
 } 
 .save-btn {
-    display: block;
-   
+    position:fixed;
+    bottom:1rem;
+    width: 90.74%;
     background: #0c1260;
     border-radius: 0.24rem;
 }

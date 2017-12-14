@@ -2,7 +2,7 @@
 * @Author: anchen
 * @Date:   2017-11-02 17:38:31
 * @Last Modified by:   anchen
-* @Last Modified time: 2017-11-03 11:15:51
+* @Last Modified time: 2017-12-14 20:48:03
 */
 .wrap {
     padding: 0 4.63%;
@@ -24,7 +24,7 @@
 .header h1 {
     text-align: center;
     color: #333333;
-    font-size: 0.95rem;
+    font-size: 1.14rem;
     line-height: 3.81rem;
     font-weight: bold;
 }
@@ -37,7 +37,7 @@
 
 }
 .section ul li a {
-    font-size: 0.95rem;
+    font-size: 1.14rem;
     font-weight: bold;
 }
 .set-about {

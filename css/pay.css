@@ -11,7 +11,7 @@
         text-align: center;
         line-height: 3.1rem;
         font-weight: bolder;
-        font-size: 1.33rem;
+        font-size: 1.14rem;
         color:#000;
     }
     
@@ -128,17 +128,5 @@
     #year option {
          padding: 0 19%;
     }
-    p{
-        font-size: 0.86rem;
-        text-align: center;
-        margin: -0.3rem 0 0.71rem;
-    }
-    .continue {
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        color: #1f2949;
-        font-size: 0.86rem;
-        font-weight: bolder;
-    }
+    
    

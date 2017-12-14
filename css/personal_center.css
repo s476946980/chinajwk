@@ -1,9 +1,3 @@
-/* 
-* @Author: anchen
-* @Date:   2017-11-02 17:38:31
-* @Last Modified by:   anchen
-* @Last Modified time: 2017-12-07 14:40:03
-*/
 .wrap {
     padding: 0 4.63%;
     height: 100%;
@@ -20,9 +14,6 @@
     height: 3.81rem;
     background: url("../images/per_cen_03.png") center center no-repeat;
     background-size: contain;
-    /*font-size: 1.05rem;*/
-    /*text-align: center;
-    line-height: 3.81rem;*/
 }
 .header i {
     position: absolute;
@@ -37,8 +28,9 @@
 .header h1 {
     text-align: center;
     color: #333333;
-    font-size: 0.95rem;
+    font-size: 1.14rem;
     line-height: 3.81rem;
+    font-weight: bolder;
 }
 
 .per-main {
@@ -54,7 +46,7 @@
 .main-tit h2 {
     height: 1.52rem;
     margin-bottom: 1.24rem;
-    font-size: 1.57rem;
+    font-size: 1.9rem;
     font-weight: bold;
 }
 .main-con span {
@@ -86,7 +78,7 @@
     height: 2.38rem;
     background: #a0a0ac;
     line-height: 2.38rem;
-    font-size: 0.95rem;
+    font-size: 1.19rem;
     text-align: center;
     font-weight: bold;
 }
@@ -116,7 +108,7 @@
 }
 .order-main h3 span, .fav-main h3 span {
     margin-left: 0.5rem;
-    font-size: 0.57rem;
+    font-size: 0.71rem;
     color: #a0a0ac;
 }
 .order-main h3 i {
@@ -154,14 +146,14 @@
 }
 .order-content h4 {
     margin-bottom: 0.76rem;
-    font-size: 0.86rem;
+    font-size: 1.1rem;
 }
 .order-content h4 span {
     float: right;
     color: #a0a0ac;
 }
 .order-content p {
-    font-size: 0.76rem;
+    font-size: 0.86rem;
 }
 .order-btn {
     position: absolute;
@@ -171,20 +163,18 @@
 }
 .order-btn span {
     float: left;
-    /*width: 5.95rem;*/
     width: 46.73%;
     height: 2.38rem;
     line-height: 2.38rem;
     text-align: center;
     border-radius: 0.5rem;
     color: #ffffff;
+    font-size: 0.86rem;
 }
 .order-btn span:nth-child(1) {
     margin-right: 5.61%;
     color: #fff;
 }
-/*.order-btn span:nth-child(2) {
-}*/
 .order-btn .btn-cancel {
     background: #0c1260;
 }

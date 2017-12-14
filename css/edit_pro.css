@@ -2,7 +2,7 @@
 * @Author: anchen
 * @Date:   2017-11-02 17:37:47
 * @Last Modified by:   anchen
-* @Last Modified time: 2017-12-14 17:49:21
+* @Last Modified time: 2017-12-14 20:16:10
 */
 input{  
    background:none;  
@@ -317,10 +317,6 @@ html body {
 }
 
 .save-btn {
-    position: absolute;
-    bottom: 5.62rem;
-    width: 90.74%;
-    margin: 0 1.02%;
     background: #0c1260;
     border-radius: 0.24rem;
 }
@@ -329,6 +325,8 @@ html body {
     color: #fff;
     line-height: 2.38rem;
     text-align: center;
+    font-weight: bolder;
+    font-size: 1rem;
 }
 .main-radio {
     padding: 0.83rem 0 0 2.04%;
@@ -337,9 +335,9 @@ html body {
     float: left;
     margin-right: 2.65%;
 }
-.label-text {
-    /*display: inline-block;*/
+.main-radio .label-text {
+    margin-right: 11%;
     font-weight: bold;
-    font-size: 0.76rem;
+    font-size: 1rem;
     line-height: 1.38rem;
 }
