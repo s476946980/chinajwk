@@ -12,49 +12,51 @@
         <div class="wrap">
             <header class="header">
                 <a href="set.html"><span></span></a>
-                <h1>Edit Profile</h1>
+                <h1>编辑个人资料</h1>
             </header>
             <section>
                 <form action="">
-                    <div class="edit-file">
-                        <div id="preview">
-                            <img id="imghead" border="0" src="../images/per_cen_11.png"onclick="$('#previewImg').click();">
-                        </div>         
-                        <label for="previewImg"></label>
-                        <input type="file" onchange="previewImage(this)" style="display: none;" id="previewImg">
-                    </div>
+                    <ul class="upload" id="upload">
+                        <li>
+                          <input type="file" accept="image/*" id="file0" />
+                          <label class="weui-cell weui-cell_access license" for="file0">
+                            <img src="../images/per_cen_11.png" alt="" id="img0" class="img0" />
+                            <span></span>
+                          </label>
+                        </li>
+                    </ul>
                     <div class="add-main">
-                        <label class="label" for="">Name</label>
+                        <label class="label" for="">昵称</label>
                         <label class="label-input" for="">
                             <input type="text" placeholder="Allen Zhou" />
                         </label>
                     </div>
                     <div class="add-main">
-                        <label class="label" for="">Username</label>
+                        <label class="label" for="">用户名</label>
                         <label class="label-input" for="">
                             <input type="text" placeholder="AllenZhou007" />
                         </label>
                     </div>
                     <div class="add-main">
-                        <label class="label" for="">Date of birth</label>
+                        <label class="label" for="">生日</label>
                         <label class="label-input" for="">
                             <input type="text" placeholder="1977.08.03" />
                         </label>
                     </div>
                     <div class="add-main">
-                        <label class="label" for="">Email</label>
+                        <label class="label" for="">邮箱</label>
                         <label class="label-input">
                             <input type="text" placeholder="564012121@qq.com" />
                         </label>
                     </div>
                     <div class="add-main">
-                        <label class="label" for="">Phone Number</label>
+                        <label class="label" for="">手机号码</label>
                         <label class="label-input">
                             <input type="text" placeholder="+86 136 6606 1899" />
                         </label>
                     </div>
                     <a href="#" class="save-btn">
-                        <input type="button" value="Save" />
+                        <input type="button" value="保存" />
                     </a>
                 </form>
             </section>

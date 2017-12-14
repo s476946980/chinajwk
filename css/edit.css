@@ -30,39 +30,26 @@ html body {
     font-size: 0.95rem;
     line-height: 3.81rem;
     font-weight: bold;
+    font-size: 1.14rem;
 }
-.edit-file {
+.upload {
+    position: relative;
+    width: 7.14rem;
+    height: 7.14rem;
     margin: 2.62rem 0 1.67rem 0;
 }
-.file-label {
-    position: relative;
-    display: block;
-    width: 7.14rem;
-    height: 7.14rem;
-    border-radius: 50%;
-    background: url("../images/per_cen_11.png") 0 0 no-repeat;
-    background-size: contain;
-
+input[type="file"] {
+    display:none;
 }
-.file-label input[type="file"] {
-    display: block;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    width: 100%;
-    height: 100%;
-}
-.file-label img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+.upload img {
     display: block;
     width: 7.14rem;
     height: 7.14rem;
     border-radius: 50%;
 }
-.file-label span {
+.upload span {
     position: absolute;
-    right: 0;
+    left: 5.14rem;
     bottom: 0;
     display: block;
     width: 1.45rem;
@@ -70,6 +57,7 @@ html body {
     background: url("../images/edit_03.png") 0 0 no-repeat;
     background-size: contain;
 }
+
 .add-main {
     margin-bottom: 0.95rem;
 }
@@ -78,7 +66,7 @@ html body {
     height: 1.52rem;
     padding-left: 1.84%;
     line-height: 1.52rem;
-    font-size: 0.67rem;
+    font-size: 0.86rem;
 }
 .label-input {
     display: block;
@@ -90,7 +78,7 @@ html body {
     width: 94.9%;
     height: 2.38rem;
     padding-left: 5.1%;
-    font-size: 0.76rem;
+    font-size: 1rem;
     line-height: 2.38rem;
     color: #000000;
     font-weight: bold;
@@ -108,4 +96,8 @@ html body {
     color: #fff;
     line-height: 2.38rem;
     text-align: center;
+    font-size: 1.2;
+}
+::-webkit-input-placeholder {
+    color:#000;
 }
