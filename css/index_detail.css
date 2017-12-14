@@ -59,16 +59,15 @@
     }
     
     .custom{
-        float: left;
-        display: block;
-        line-height: 2.86rem;
-        padding: 0 1.21rem;
-        margin-top: 0.65rem;
-        color:#000;
-        background: #ffd200;
-        border-radius: 0.71rem;
+        position: absolute;
         font-size: 1.07rem;
-        -wibkit-border-radius:0.71rem;
+        left: 7%;
+        bottom: 0.71rem;
+        width: 7.14rem;
+        text-align: center;
+        background: #ffd200;
+        line-height: 2.86rem;
+        border-radius: 0.71rem;
         font-weight: bolder;
     }
     /*分享*/

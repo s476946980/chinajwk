@@ -66,7 +66,8 @@
         font-size: 1.07rem;
         left:7%;
         bottom: 0.71rem;
-        padding: 0 1.19rem;
+        width:7.14rem;
+        text-align: center;
         background:#ffd200;
         line-height: 2.86rem;
         border-radius: 0.71rem;
@@ -148,18 +149,18 @@
     font-weight: bold;
 }
 .facebook {
-    background: url("../images/facebook.png") center 0 no-repeat;
+    background: url("../images/weibo.png") center 0 no-repeat;
     background-size: 60% auto;
 }
 .instagram {
-    background: url("../images/instag.png") center 0 no-repeat;
+    background: url("../images/wechat.png") center 0 no-repeat;
     background-size: 60% auto;
 }
 .twitter {
-    background: url("../images/twitter.png") center 0 no-repeat;
+    background: url("../images/circle_friends.png") center 0 no-repeat;
     background-size: 60% auto;
 }
 .pinterest {
-    background: url("../images/pinter.png") center 0 no-repeat;
+    background: url("../images/tencent.png") center 0 no-repeat;
     background-size: 60% auto;
 }
