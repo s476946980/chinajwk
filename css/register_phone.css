@@ -92,3 +92,17 @@ p label a {
     font-size: 0.86rem;
     color:#828282;
 }
+.form {
+    margin-bottom: 2.38rem;
+}
+.gologin {
+    display:block;
+    width:7.14rem;
+    line-height: 2.38rem;
+    text-align: center;
+    margin: 0 auto 2.38rem;
+    background: #d9d9d9;
+    font-size: 1rem;
+    color:#1f2949;
+    border-radius: 0.36rem;
+}
