@@ -1,0 +1,66 @@
+.guide-cover {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background: #666;
+}
+.guide {
+    padding-top: 1.33rem;
+   
+}
+.guide-art {
+    float: left;
+    width:63%;
+    padding-left: 14%;
+    margin-right: 2%;
+}
+.guide-art li {
+    height:4.1rem;
+    margin-bottom: 0.9rem;
+    line-height: 4.1rem;
+    font-size: 0.9rem;
+    color:white;
+    background:url("../images/guide_arrow.png") no-repeat;
+    background-size:  14% 15%;
+    background-position: right center;
+}
+
+.guide-art li span {
+    margin-right: 0.48rem;
+    font-size: 1.1rem;
+    color: #fdd000;
+    font-weight: bolder;
+}
+.guide-round {
+    float: left;
+}
+.guide-round li {
+    width:3.62rem;
+    height:3.62rem;
+    margin-bottom: 0.9rem;
+    border-radius: 50%;
+    border: 0.24rem solid white;
+}
+.step-7 {
+    width:67.96%;
+    height:4.48rem;
+    margin: -0.9rem 0 0 6.48%;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 3.58rem;
+    background:url("../images/step-7.png") no-repeat;
+    background-size: 100% 100%;
+    color:white;
+}
+.guide-strat {
+    position: fixed;
+    bottom:0.5rem;
+    left:4.44%;
+    width:67.96%;
+    line-height: 2.98rem;
+    font-size: 1.05rem;
+    text-align: center;
+    background:#ffd200;
+    font-weight: bolder;
+    border-radius: 1.1rem;
+}
