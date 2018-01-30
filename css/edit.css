@@ -79,7 +79,7 @@ input[type="file"] {
     height: 2.38rem;
     padding-left: 5.1%;
     font-size: 1rem;
-    line-height: 2.38rem;
+    /*line-height: 2.38rem;*/
     color: #000000;
     font-weight: bold;
 }

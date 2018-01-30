@@ -5,31 +5,50 @@
 .header {
     position: relative;
 }
-.header span {
-    position: absolute;
-    top: 0;
-    left: 0.71rem;
-    display: block;
-    width: 4.08%;
-    height: 3.81rem;
-    background: url("../images/per_cen_03.png") center center no-repeat;
+.header a {
+    position:absolute;
+    display:block;
+    width:30%;
+    line-height: 4.57rem;
+    color:#0c1260;
+    font-size: 1.14rem;
+}
+.header .header-page {
+    top:0;
+    left:0;
+}
+.header .header-set {
+    right:0;
+    top:0;
+}
+.header a span {
+    float: left;
+    width: 1.4rem;
+    height: 4.57rem;
+    margin-right: 0.45rem;
+    background: url("../images/page_cen.png") center center no-repeat;
     background-size: contain;
 }
+
 .header i {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-    width: 5.92%;
-    height: 3.81rem;
-    background: url("../images/per_cen_06.png") center center no-repeat;
+    float: right;
+    width: 2.1rem;
+    height: 4.57rem;
+    margin-left: 0.48rem;
+    background: url("../images/header_set.png") center center no-repeat;
     background-size: contain;
 }
+.header-set em {
+    float: right;
+}
+
+
+
 .header h1 {
     text-align: center;
-    color: #333333;
-    font-size: 1.14rem;
-    line-height: 3.81rem;
+    color: #0c1260;
+    font-size: 1.33rem;
+    line-height: 4.57rem;
     font-weight: bolder;
 }
 

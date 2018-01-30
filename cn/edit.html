@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, content=user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="../css/reset.css" />
         <link rel="stylesheet" type="text/css" href="../css/edit.css" />
+        <link rel="stylesheet" type="text/css" href="../css/date.css" />
         <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="../js/common.js"></script>
     </head>
@@ -37,10 +38,10 @@
                             <input type="text" placeholder="AllenZhou007" />
                         </label>
                     </div>
-                    <div class="add-main">
+                    <div class="add-main demo">
                         <label class="label" for="">生日</label>
-                        <label class="label-input" for="">
-                            <input type="text" placeholder="1977.08.03" />
+                        <label class="label-input lie" for="beginTime">
+                            <input type="text" value="2012-12-21" placeholder="1977-08-03" id="beginTime" class="kbtn"/>
                         </label>
                     </div>
                     <div class="add-main">
@@ -60,7 +61,15 @@
                     </a>
                 </form>
             </section>
+            <div id="datePlugin"></div>
         </div>
+        <script type="text/javascript" src="../js/date.js" ></script>
+        <script type="text/javascript" src="../js/iscroll.js" ></script>
         <script type="text/javascript" src="../js/edit.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $('#beginTime').date();
+            });
+        </script>
     </body>
 </html>
